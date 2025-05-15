@@ -1,2 +1,23 @@
 name: Zola Deploy to Pages
-uses: shalzz/zola-deploy-action@v0.20.0
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Build and deploy
+        uses: shalzz/zola-deploy-action@v0.20.0
+        env:
+          # Use GitHub token for GitHub Pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # PAGES_BRANCH is the branch where the built site will be deployed
+          PAGES_BRANCH: gh-pages
