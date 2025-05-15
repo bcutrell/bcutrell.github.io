@@ -1,0 +1,19 @@
+Here's a good .gitignore file for a Zola project:
+# Zola build output
+public/
+
+# Zola cache
+.zola/
+
+# Sass cache
+.sass-cache/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
