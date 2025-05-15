@@ -17,7 +17,7 @@ jobs:
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.20.0
         env:
-          # Use GitHub token for GitHub Pages
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # PAGES_BRANCH is the branch where the built site will be deployed
+          # target branch
           PAGES_BRANCH: gh-pages
+          # access token
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
