@@ -1,3 +1,5 @@
+.local/
+
 # Editor files
 .vscode/
 .idea/
