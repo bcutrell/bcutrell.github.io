@@ -56,14 +56,14 @@ body {
 }
 
 .title-panel .subtitle {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
   line-height: 1.8;
 }
 
 .title-panel .location {
-  font-size: 0.55rem;
+  font-size: 0.65rem;
   color: var(--text-muted);
   line-height: 1.8;
 }
@@ -139,10 +139,10 @@ body {
   }
 
   .title-panel .subtitle {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 
   .title-panel .location {
-    font-size: 0.45rem;
+    font-size: 0.55rem;
   }
 }
